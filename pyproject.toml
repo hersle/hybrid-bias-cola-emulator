@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+
+[project]
+name = "hybrid-bias-cola-emulator"
+version = "0.1.0"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+]
+requires-python = ">=3.10"
+authors = [
+    {name = "Herman Sletmoen"},
+]
