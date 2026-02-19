@@ -4,7 +4,7 @@
 
 ```sh
 git clone --recursive https://github.com/hersle/hybrid-bias-cola-emulator
-make -C hi_class_public/ class # compile CLASS
+make -C hi_class_public/ class # compile CLASS (possibly needs -std=gnu17)
 make -C FML/FML/COLASolver/ nbody # compile COLA
 conda deactivate # optional
 python -m venv venv # optional
@@ -19,3 +19,7 @@ ipython kernel install --user --name=venv --display-name="hybrid-bias-cola-emula
 jupyter-lab --no-browser # on server
 ssh -L 9999:localhost:8888 your-cluster-machine # on client
 ```
+
+## Notes
+
+- Newer hiclass versions than the one included in this project's git submodule crashes with Brans-Dicke.
