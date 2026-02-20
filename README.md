@@ -22,4 +22,4 @@ ssh -L 9999:localhost:8888 your-cluster-machine # on client
 
 ## Notes
 
-- Newer hiclass versions than the one included in this project's git submodule crashes with Brans-Dicke.
+- Other hiclass versions than the one included in this project's git submodule may crash with Brans-Dicke.
