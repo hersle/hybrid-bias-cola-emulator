@@ -6,6 +6,14 @@
 git clone --recursive https://github.com/hersle/hybrid-bias-cola-emulator
 make -C hi_class_public/ class # compile CLASS (possibly needs -std=gnu17)
 make -C FML/FML/COLASolver/ nbody # compile COLA
+
+# With Conda environment.toml
+conda env create -f environment.yml
+conda env update --file environment.yml --prune
+conda activate hybrid-bias-cola-emulator
+# etc.
+
+# With Python pyproject.toml
 conda deactivate # optional
 python -m venv venv # optional
 source venv/bin/activate
